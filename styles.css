@@ -1,0 +1,47 @@
+.container {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.days {
+  padding: 40px;
+  font-family: monospace;
+  font-display: center;
+}
+
+.data {
+  margin: 0px;
+  padding: 30px;
+  display: block;
+}
+h2 {
+  display: block;
+  font-family: monospace;
+  padding: 20px;
+}
+li {
+  font-family: monospace;
+  list-style: none;
+  padding-left: 20px;
+}
+.float-left {
+  font-family: monospace;
+  display: block;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+.search-form {
+  width: 400px;
+}
+.locations {
+  width: 300px;
+}
+.col-6 {
+  font-size: large;
+}
+.col-3 {
+  width: 200px;
+}
+.button {
+  width: 100px;
+}
