@@ -8,7 +8,7 @@
   padding: 40px;
   font-family: monospace;
   font-display: center;
-  color: white;
+  color: black;
 }
 
 .data {
@@ -20,20 +20,20 @@ h2 {
   display: block;
   font-family: monospace;
   padding: 20px;
-  color: white;
+  color: black;
 }
 li {
   font-family: monospace;
   list-style: none;
   padding-left: 20px;
-  color: white;
+  color: black;
 }
 .float-left {
   font-family: monospace;
   display: block;
   padding-left: 50px;
   padding-bottom: 20px;
-  color: white;
+  color: black;
 }
 .search-form {
   width: 400px;
