@@ -2,7 +2,7 @@
   border: 1px solid;
   border-radius: 10px;
   padding: 20px;
-  background-image: url("https://i.pinimg.com/564x/22/b8/ff/22b8ffb60892118a24eed6024b953120.jpg");
+  background: linear-gradient(#eaefed, #88e2c0, #3ba57d);
 }
 .days {
   padding: 40px;
