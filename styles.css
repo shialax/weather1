@@ -22,22 +22,22 @@
 }
 h2 {
   display: block;
-  font-family: monospace;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 20px;
   color: black;
 }
 li {
-  font-family: monospace;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   list-style: none;
   padding-left: 20px;
   color: black;
 }
 .float-left {
-  font-family: monospace;
   display: block;
   padding-left: 50px;
   padding-bottom: 20px;
   color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .search-form {
   width: 400px;
