@@ -76,9 +76,6 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-let searchInput = document.querySelector("#search-input");
-searchInput.addEventListener("submit", handleSubmit);
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
