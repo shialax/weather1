@@ -82,3 +82,6 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src", "http://openweathermap.org/img/wn/10d@2x.png");
