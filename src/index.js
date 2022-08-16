@@ -59,12 +59,6 @@ function handleSubmit(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let farenheitTemperature = (14 * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = farenheitTemperature;
-}
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
@@ -75,6 +69,13 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let farenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = farenheitTemperature;
+}
 
 searchCity("New York");
 
