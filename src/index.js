@@ -59,6 +59,12 @@ function handleSubmit(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let farenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = farenheitTemperature;
+}
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
@@ -77,13 +83,6 @@ iconElement.setAttribute(
   "src",
   `http://openweathermap.org/img/wn/${response.data.weather[0].icon}2x.png`
 );
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let farenheitTemperature = (14 * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = farenheitTemperature;
-}
 
 function convertToCelsius(event) {
   event.preventDefault();
