@@ -22,6 +22,12 @@ function formatDate(date) {
   ];
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}2x.png`
+  );
 }
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -59,12 +65,6 @@ function handleSubmit(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
-
-let iconElement = document.querySelector("#icon");
-iconElement.setAttribute(
-  "src",
-  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}2x.png`
-);
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
