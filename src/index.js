@@ -80,8 +80,9 @@ iconElement.setAttribute(
 
 function convertToFahrenheit(event) {
   event.preventDefault();
+  let farenheitTemperature = (14 * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
+  temperatureElement.innerHTML = farenheitTemperature;
 }
 
 function convertToCelsius(event) {
