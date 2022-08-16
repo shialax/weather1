@@ -37,12 +37,6 @@ function showWeather(response) {
     response.data.weather[0].main;
 }
 
-let iconElement = document.querySelector("#icon");
-iconElement.setAttribute(
-  "src",
-  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}2x.png`
-);
-
 function searchCity(city) {
   let apiKey = "308f0849c624ffab4a06f38f76ca19a0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -77,6 +71,12 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute(
+  "src",
+  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}2x.png`
+);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
